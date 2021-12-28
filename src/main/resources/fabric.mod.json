@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "ScarpetClient",
+  "version": "${version}",
+  "name": "ScarpetClient",
+  "description": "Client-side scarpet",
+  "authors": [
+    "AdvaitSen",
+    "Ghoulboy78"
+  ],
+  "contact": {
+    "website": "github.com/Advait-Sen/ScarpetClient",
+    "repo": "github.com/Advait-Sen/ScarpetClient"
+  },
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "adsen.scarpet.client.ScarpetClientClient"
+    ],
+    "main": [
+      "adsen.scarpet.client.ScarpetClient"
+    ]
+  },
+  "mixins": [
+    "ScarpetClient.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.12.12",
+    "minecraft": "1.18.1"
+  }
+}
